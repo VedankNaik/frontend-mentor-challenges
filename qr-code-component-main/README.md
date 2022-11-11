@@ -10,7 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![![Screenshot]](/images/screenshot.jpg)
+![![Screenshot]](./images/screenshot.jpg)
 
 ### Links
 
