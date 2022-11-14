@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Secondary */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: var(--cream);
+  height: calc(100vh - 1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  max-width: 550px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image {
+  min-width: 50%;
+}
+
+.content {
+  padding: 0rem 1.5rem;
+}
+
+.title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 0.3rem;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+}
+
+.head {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 1rem;
+  color: var(--dark-grayish-blue);
+  line-height: 1.4rem;
+}
+
+.price {
+  margin-top: 1rem;
+  color: var(--dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3.5rem;
+}
+
+.price p {
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+}
+
+.cart-btn {
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: var(--dark-cyan);
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cart-btn img {
+  margin-right: 0.5rem;
+}
+
+.cart-btn:hover {
+  background-color: hsl(158, 36%, 22%);
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+}
