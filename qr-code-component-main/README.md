@@ -14,8 +14,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/flex-1iBNoGb_hR)
-- Live Site URL: [Add live site URL here](https://vedanknaik.github.io/frontend-mentor-challenges/qr-code-component-main)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/flex-1iBNoGb_hR)
+- Live Site URL: [Live site](https://vedanknaik.github.io/frontend-mentor-challenges/qr-code-component-main)
 
 ### Author
 
