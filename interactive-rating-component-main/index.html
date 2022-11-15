@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="card">
+      <!-- Rating state start -->
+      <div id="rating">
+        <img class="star" src="./images/icon-star.svg" alt="star" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul>
+          <li><button class="rate-btn">1</button></li>
+          <li><button class="rate-btn">2</button></li>
+          <li><button class="rate-btn">3</button></li>
+          <li><button class="rate-btn">4</button></li>
+          <li><button class="rate-btn">5</button></li>
+        </ul>
+        <button class="submit-btn" onclick="submit('rating','thankyou')">
+          Submit
+        </button>
+      </div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thankyou hide" id="thankyou">
+        <img src="./images/illustration-thank-you.svg" alt="thankyou" />
+        <p class="rating">You selected <span id="rate_span">5</span> out of 5</p>
+        <h1>Thank you!</h1>
+        <p style="text-align:center">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <!-- <button class="submit-btn" onclick="back('thankyou','rating')">
+          Go Back
+        </button> -->
+      </div>
+    </div>
+
+    <!-- Thank you state end -->
+  </body>
+</html>
+
+<script type="text/javascript">
+  function submit(hide, show) {
+    document.getElementById(hide).style.display = "none";
+    document.getElementById(show).classList.remove("hide");
+  }
+
+  function back(hide, show) {
+    document.getElementById(show).style.display = "block";
+    document.getElementById(hide).classList.add("hide");
+  }
+
+  const rate_span = document.getElementById("rate_span");
+  const btn_rate = document.querySelectorAll(".rate-btn");
+  btn_rate.forEach((rate) => {
+    rate.addEventListener("click", () => {
+      rate_span.innerHTML = rate.innerHTML;
+    });
+  });
+</script>
