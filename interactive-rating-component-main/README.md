@@ -14,7 +14,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-rating-doFrzDlEsT)
 - Live Site URL: [Live site](https://vedanknaik.github.io/frontend-mentor-challenges/interactive-rating-component-main)
 
 ### Author
