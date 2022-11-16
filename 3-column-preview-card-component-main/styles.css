@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+.df {
+}
+
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--very-light-gray);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2rem;
+}
+
+.card {
+  padding: 2.5rem;
+  justify-content: center;
+  height: 500px;
+  max-width: 300px;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.card p {
+  margin-top: 1.5rem;
+  color: var(--transparent-white);
+  line-height: 1.8rem;
+}
+
+.card button {
+  margin-top: 5rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--very-light-gray);
+  padding: 1rem 2.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1rem 0 0 1rem;
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+.sedan button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: var(--very-light-gray);
+  border: 2px solid;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: var(--very-light-gray);
+  border: 2px solid;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: var(--very-light-gray);
+  border: 2px solid;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 55rem;
+  }
+  .sedan {   
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .luxury {
+    border-radius: 0rem 0 1rem 1rem;
+  }
+}
