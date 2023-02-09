@@ -7,4 +7,5 @@
 5. [3-Column Preview Card Component](https://vedanknaik.github.io/frontend-mentor-challenges/3-column-preview-card-component-main)
 6. [NFT preview Card Component](https://vedanknaik.github.io/frontend-mentor-challenges/nft-preview-card-component-main)
 6. [Stats preview Card Component](https://vedanknaik.github.io/frontend-mentor-challenges/stats-preview-card-component-main)
+6. [Profile Card Component](https://vedanknaik.github.io/frontend-mentor-challenges/profile-card-component-main)
 
